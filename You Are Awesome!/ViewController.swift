@@ -34,13 +34,18 @@ class ViewController: UIViewController {
         // the func showMessagePressed() acts as the loop
         // executed each time pressed and increments the index
         
-        messageLabel.text = messages[index]
+        messageLabel.text = messages.randomElement()!
         
-        if index == messages.count - 1 {
-            index = 0
-        } else {
-            index += 1
-        }
+        // !!!!! when you know there is a value that can be chosen
+        // "force unwrap"
+        
+//        messageLabel.text = messages[index]
+//
+//        if index == messages.count - 1 {
+//            index = 0
+//        } else {
+//            index += 1
+//        }
         
 //        let message1 = "You Are Awesome!"
 //        let message2 = "You Are Great!"
