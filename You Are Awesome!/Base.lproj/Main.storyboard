@@ -22,30 +22,41 @@
                                 <rect key="frame" x="16" y="44" width="382" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="neP-hy-FAy"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="sJr-GH-N2u"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
                                 <color key="textColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfZ-jj-9Re">
-                                <rect key="frame" x="147" y="159" width="120" height="30"/>
+                                <rect key="frame" x="119.5" y="152" width="175" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Jq2-KV-fg0"/>
-                                    <constraint firstAttribute="width" constant="120" id="Oav-pY-6BC"/>
+                                    <constraint firstAttribute="height" constant="30" id="AcD-Ot-HbX"/>
+                                    <constraint firstAttribute="width" constant="175" id="uuM-gl-e7M"/>
                                 </constraints>
                                 <state key="normal" title="Show Message"/>
                                 <connections>
                                     <action selector="showMessagePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ySO-Kj-nFU"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-w0-u84">
+                                <rect key="frame" x="16" y="190" width="382" height="634"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SfZ-jj-9Re" firstAttribute="top" secondItem="I01-k9-f7y" secondAttribute="bottom" constant="15" id="BOh-7G-iaq"/>
+                            <constraint firstItem="SfZ-jj-9Re" firstAttribute="top" secondItem="I01-k9-f7y" secondAttribute="bottom" constant="8" id="61M-ue-zSs"/>
                             <constraint firstItem="I01-k9-f7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="DSF-OC-oeF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I01-k9-f7y" secondAttribute="trailing" constant="16" id="Edm-1k-ax1"/>
-                            <constraint firstItem="SfZ-jj-9Re" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgn-JV-BE2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I01-k9-f7y" secondAttribute="trailing" constant="16" id="Jej-JO-ft9"/>
+                            <constraint firstItem="I01-k9-f7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="K2T-ap-qli"/>
+                            <constraint firstItem="SfZ-jj-9Re" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="POW-kc-SMq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XgR-w0-u84" secondAttribute="trailing" constant="16" id="ghB-vJ-iUM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XgR-w0-u84" secondAttribute="bottom" constant="38" id="jDs-ZE-9SL"/>
+                            <constraint firstItem="XgR-w0-u84" firstAttribute="top" secondItem="SfZ-jj-9Re" secondAttribute="bottom" constant="8" id="myo-1U-O79"/>
+                            <constraint firstItem="I01-k9-f7y" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nFz-b3-whl"/>
                             <constraint firstItem="I01-k9-f7y" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nxq-av-Adc"/>
+                            <constraint firstItem="XgR-w0-u84" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="s0R-Ie-joH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -55,7 +66,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+            <point key="canvasLocation" x="136.23188405797103" y="131.25"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0" width="4032" height="3024"/>
+    </resources>
 </document>
