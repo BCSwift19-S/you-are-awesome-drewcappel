@@ -31,13 +31,26 @@ class ViewController: UIViewController {
                         "You've got the design skills of Jony Ive!",
                         "I can't wait to download your app!"]
         
+        var newIndex = -1
+        
+        repeat {
+            newIndex = Int.random(in:0..<messages.count)
+        } while index == newIndex
+        
+        index = newIndex
+        messageLabel.text = messages[index]
+        
+        
         // the func showMessagePressed() acts as the loop
         // executed each time pressed and increments the index
         
-        messageLabel.text = messages.randomElement()!
+//        messageLabel.text = messages.randomElement()!
         
         // !!!!! when you know there is a value that can be chosen
         // "force unwrap"
+        
+        
+        
         
 //        messageLabel.text = messages[index]
 //
